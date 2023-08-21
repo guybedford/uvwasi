@@ -96,6 +96,14 @@ additions/modifications:
   sandboxes and the `uvwasi` library. These APIs are documented in the
   Unofficial APIs section below.
 
+## Sandboxing
+
+`uvwasi` provides an implementation of WASI that can be used to support
+executing WASI binaries, but it **does not guarantee any sandboxing properties
+for WASI**. While the WASI primitives can be used as sandboxing primitives,
+this project should not be relied on for any security properties related to
+providing restricted access to the underlying host system.
+
 ### Unofficial APIs
 
 This section contains data types and functions for working with `uvwasi`. They
